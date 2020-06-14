@@ -15,7 +15,7 @@ Dentro del curso se implementan varias características tanto en HTML como en CS
 
 # Resultado
 
-A continuación se muestra el resultado de la página web de películas, si quiere ver la página por usted mismo puede entrar al [siguiente link](https://crissud.github.io/PlatziTemplate/).
+A continuación se muestra el resultado de la página web de películas, si quiere ver la página por usted mismo puede entrar al [siguiente link](https://crissud.github.io/MoveTemplate/index.html).
 
 <div align='center'>
     <img  src='https://i.imgur.com/Q8J5zR7.png'>
