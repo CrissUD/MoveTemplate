@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* -------------------------------------------- VARIABLES -------------------------------------------- */
+:root{
+    --color-pink: #FD6564;
+    --color-white: #fff;
+    --color-black: #444;
+}
+/* -------------------------------------------- REGLAS GENERALES -------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+figure{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------------------------------- REGLAS HEADER -------------------------------------------- */
+
+header{
+    height: 60px;
+    box-shadow: 2px 13px 11px -4px rgba(40,40,40,0.75);
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    background: var(--color-white);
+}
+
+header, header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-page img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-page h1{
+    color: var(--color-pink);
+    font-size: 28px;
+}
+
+.div-search{
+    width: 50%;
+}
+.div-search input{
+    height: 28px;
+    box-shadow: 0px 0px 10px 5px rgb(230, 230, 230);
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.div-profile h3{
+    color: var(--color-black);
+    font-size: 18px;
+}
+
+.div-profile figure img{
+    cursor: pointer;
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+.div-profile figure:nth-of-type(1) img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.div-profile figure:nth-of-type(2) img{
+    width: 20px;
+}
+
+/* -------------------------------------------- REGLAS NAV LEFT -------------------------------------------- */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-left, .nav-left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-left{
+    top: 0;
+    background: var(--color-pink);
+    color: var(--color-white);
+    position: fixed;
+    height: 100vh;
+    padding: 90px 10px;
+    box-sizing: content-box;
+}
+
+.nav-left img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-left h4{
+    margin-top: 5px;
+}
+
+.div-settings{
+    margin-top: 250px;
+}
+
+/* -------------------------------------------- REGLAS DASH -------------------------------------------- */
+.movie-dash{
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
+.movie-dash h1{
+    color: var(--color-black);
+}
+
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.movie-container img, .movie-container figure{
+    width: 100%;
+    height: 100%;
+}
+
+.movie{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie:hover{
+    box-shadow: -1px -1px 32px -1px rgba(253,100,100,1);
+}
+
+.cover{
+    position: absolute;
+    background: rgba(253, 101, 100, 0.6);
+    color: var(--color-white);
+    width: 100%;
+    bottom: 0;
+    padding: 0 10px;
+}
+/* -------------------------------------------- REGLAS RESPONSIVE -------------------------------------------- */
+@media(max-width:500px){
+    .div-search{
+        display: none;
+    }
+}
